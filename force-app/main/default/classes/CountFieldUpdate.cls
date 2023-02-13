@@ -11,7 +11,7 @@ public class CountFieldUpdate {
         List<Object> mtdList;
         
         
-        for(Account acct : sObjectMap.values()){
+        for(Account acct : sObjectMap.values()){ 
             acctMapValue = (Map<String, Object>)JSON.deserializeUntyped((String)(acct.get('Description')));
             if(acctMapValue.containsKey('ATTR_VALUE') && acctMapValue.containsKey('ATTRMDT')){
                 mtdList = (List<Object>)acctMapValue.get('ATTRMDT');

@@ -20,7 +20,7 @@ public class CountFieldUpdate {
             
         }
         
-        for(Object obj : mtdList){
+        for(Object obj : mtdList){ 
             descMapValue = (Map<String, Object>)obj;
             if(descMapValue.containsKey('details') && descMapValue.get('brand') == 'iphone'){
                 detailsMap = (Map<String, Object>)descMapValue.get('details');
